@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Basic Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+	<table>
+		<th>
+			<h2>Rishi's Calculator</h2>
+		</th>
+		<tr>
+			<td id="td-1">
+				<input type="text" id="result" placeholder="0">
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<input type="button" value="7" class="calc" onclick="display('7')">
+                <input type="button" value="8" class="calc" onclick="display('8')">
+                <input type="button" value="9" class="calc" onclick="display('9')">
+			    <input type="button" value="+" class="operator" onclick="display('+')">
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<input type="button" value="4" class="calc" onclick="display('4')">
+                <input type="button" value="5" class="calc" onclick="display('5')">
+                <input type="button" value="6" class="calc" onclick="display('6')">
+                <input type="button" value="-" class="operator" onclick="display('-')">
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<input type="button" value="1" class="calc" onclick="display('1')">
+				<input type="button" value="2" class="calc" onclick="display('2')">
+			    <input type="button" value="3" class="calc" onclick="display('3')">
+                <input type="button" value="x" class="operator" onclick="display('*')">
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<input type="button" value="00" class="calc" onclick="display('00')">
+				<input type="button" value="0" class="calc" onclick="display('0')">
+			    <input type="button" value="." class="calc" onclick="display('.')">
+                <input type="button" value="/" class="operator" onclick="display('/')">
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<input type="button" value="=" class="calc1" onclick="result()">
+                <input type="button" value="C" class="calc1" onclick="erase()">
+                <input type="button" value="√" class="operator" onclick="sqrt()">
+			</td>
+		</tr>
+    </table>
+
+
+
+<h3></h3>
+<script src="script.js"></script>
+</body>
+</html>
