@@ -1,0 +1,148 @@
+body{
+	margin-top: 10%;
+	background-color: #000;
+}
+
+h2{
+	color: #00ad2e;
+	font-weight: 800;
+	font-size: 2em;
+	text-shadow: 1px white;
+	font-style: italic;
+	font-family: 'Chilanka', cursive;
+}
+
+table{
+	width: 35%;
+	background-color: #363636;
+	font-family: 'Chilanka', cursive;
+	border: 2px dashed #00ad2e;
+	margin: 0 auto;
+}
+
+table td{
+	padding: 5px;
+	display: flex;
+}
+
+#td-1{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#result{
+	width: 91%;
+	height: 70px;
+	padding: 10px;
+	text-align: end;
+	font-size: 3em;
+	margin-left: 10px;
+	background-color: #4f4f4f;
+	border: none;
+	box-shadow: 2px 2px 4px black;
+	color: white;
+	outline: none;
+	text-shadow: 1px 1px 1px black;
+	text-transform: uppercase;
+}
+
+#result::placeholder{
+	color: white;
+}
+
+.calc{
+	width: 30%;
+	height: 70px;
+	font-size: 2em;
+	margin-right: 8px;
+	background-color: #4f4f4f;
+	border: none;
+	box-shadow: 2px 2px 4px black;
+	color: #fff;
+	outline: none;
+	border-radius: 10px;
+}
+
+.calc:hover{
+	background-color: #9e9e9e;
+}
+
+.calc1{
+	width: 45%;
+	height: 70px;
+	font-size: 2em;
+	margin-right: 15px;
+	background-color: #00ad2e;
+	color: white;
+	outline: none;
+	border: none;
+	box-shadow: 2px 2px 4px black;
+	border-radius: 10px;
+}
+
+.calc1:hover{
+	background-color: #00fa04;
+}
+
+.operator{
+	width: 8%;
+	font-size: 2em;
+	background-color: #00ad2e;
+	color: white;
+	outline: none;
+	border: none;
+	box-shadow: 2px 2px 4px black;
+	border-radius: 10px;
+}
+
+.operator:hover{
+	background-color: #00fa04;
+}
+
+table tr:third-child td:nth-child(1){
+	border: none;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px){
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px){
+		table{
+		width: 60%;
+	}
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px){
+	table{
+		width: 75%;
+	}
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px){
+	table{
+		width: 95%;
+	}
+
+	#result{
+		padding: 2px;
+	}
+
+	.operator{
+		width: 15%;
+	}
+
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) *********
+@media (max-width: 479px){
+		table{
+	width: 100%;
+	height: 100vh;
+}
+}
+*/
